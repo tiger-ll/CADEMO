@@ -266,6 +266,7 @@ input[type="submit"]{
     overflow:hidden;
     border-radius: 15px; 
     border:solid 1px #e3e4e5;
+    margin-bottom: 5rem;
 }
 .cardsCollector{
     height: 260px;
