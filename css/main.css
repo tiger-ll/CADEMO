@@ -82,7 +82,7 @@ body::-webkit-scrollbar-track {
     display: block;
     content: " ";
     width: 100%;
-    min-width: 1024px;
+
     position: fixed;
     z-index: 99;
     background: #3d3d3d;
@@ -677,12 +677,15 @@ body::-webkit-scrollbar-corner {
        (min-resolution: 120dpi) {
 
 }
-@media (max-width: 400px){
+@media (max-width: 640px){
     .brand img{
         width: 7em;
     }
     .brand a{
         font-size: smaller;
+    }
+    .uiTitle{
+        display: none;
     }
 }
 
