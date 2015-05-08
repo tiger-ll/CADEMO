@@ -1,0 +1,130 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="" ng-app="demoCA"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="content">
+        <nav class="mainNav shadow">
+            <div class="row brand mid">
+                <a class="small-10 large-9 columns left" href="#"><img src="img/selerity_logo_white.png" alt="Selerity"><span class="uiTitle">Content Analytics Demo</span>
+                <span class="stageMark">-Beta-</span>
+                </a>
+
+            </div> 
+        </nav>
+        
+        <div class="main Wrapper row clearfix" ng-controller="formController as formCtrl">
+
+            <div class="formGroup first medium-6 columns clearfix" >
+                <h3>Input Content</h3>
+                <form class="demoForm btnWrap cleardix" ng-submit="processForm()">
+                <textarea class="inputStylize textArea" ng-model="formData.text" tabindex="2" rows="10" name="text" placeholder="Enter Test Content" value="Text"></textarea>
+                <button class="btnWrap btn submit pull-right clearfix" type="submit" tabindex="3" name="submit" taborder="3" value="Start">SUBMIT</button>
+                </form>
+            </div>
+            <div class="billBoard clearfix medium-5 columns right">
+                <div class="titleGroup animated fadeIn">
+                  <h3>Relevant Entities</h3>
+                  <div class="btnGroup clearfix">
+                  <button class="btn sub cjson">    <svg version="1.1"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+               x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 284.6 284.6" enable-background="new 0 0 284.6 284.6"
+               xml:space="preserve">
+                <defs>
+                </defs>
+                <g>
+              <path fill="#000" d="M142.3,0C63.7,0,0,63.7,0,142.3s63.7,142.3,142.3,142.3s142.3-63.7,142.3-142.3S220.9,0,142.3,0z
+                 M83.3,92.9l8.1-6.3h8.8v47.2H89.9V97.7l-6.7,4.7V92.9z M111.7,181.7c0,3.4-0.9,6.8-2.9,9.6c-2.9,4.1-7.2,6.5-12.9,6.5
+                c-6.2,0-10.6-3-13.4-7.7c-1.5-2.6-2.2-5.5-2.2-8.5v-14.5c0-3,0.7-6,2.3-8.6c2.9-4.8,7.4-7.7,13.6-7.7c5.4,0,9.4,2.2,12.1,5.7
+                c2.3,2.9,3.3,6.6,3.3,10.3V181.7z M135.3,197.9H125v-36.2l-6.7,4.7v-9.5l8.1-6.3h8.8V197.9z M139.2,117.7c0,3.4-0.9,6.8-2.9,9.6
+                c-2.9,4.1-7.2,6.5-12.9,6.5c-6.2,0-10.6-3-13.4-7.7c-1.5-2.6-2.2-5.5-2.2-8.5v-14.5c0-3,0.7-6,2.3-8.6c2.9-4.8,7.4-7.7,13.6-7.7
+                c5.4,0,9.4,2.2,12.1,5.7c2.3,2.9,3.3,6.6,3.3,10.3V117.7z M146.6,92.9l8.1-6.3h8.8v47.2h-10.3V97.7l-6.7,4.7V92.9z M178,181.7
+                c0,3.4-0.9,6.8-2.9,9.6c-2.9,4.1-7.2,6.5-12.9,6.5c-6.2,0-10.6-3-13.4-7.7c-1.5-2.6-2.2-5.5-2.2-8.5v-14.5c0-3,0.7-6,2.3-8.6
+                c2.9-4.8,7.4-7.7,13.6-7.7c5.4,0,9.4,2.2,12.1,5.7c2.3,2.9,3.3,6.6,3.3,10.3V181.7z M201.6,197.9h-10.3v-36.2l-6.7,4.7v-9.5
+                l8.1-6.3h8.8V197.9z M204.2,117.7c0,3.4-0.9,6.8-2.9,9.6c-2.9,4.1-7.2,6.5-12.9,6.5c-6.2,0-10.6-3-13.4-7.7
+                c-1.5-2.6-2.2-5.5-2.2-8.5v-14.5c0-3,0.7-6,2.3-8.6c2.9-4.8,7.4-7.7,13.6-7.7c5.4,0,9.4,2.2,12.1,5.7c2.3,2.9,3.3,6.6,3.3,10.3
+                V117.7z"/>
+              <path fill="#000" d="M123.6,94.8c-3.9,0-6.6,5-6.5,15.5c-0.1,10.4,2.5,15.4,6.6,15.4c4.1,0,6.4-5.2,6.4-15.5
+                C130,100.1,127.9,94.8,123.6,94.8z"/>
+              <path fill="#000" d="M162.4,158.8c-3.9,0-6.6,5-6.5,15.5c-0.1,10.4,2.5,15.4,6.6,15.4c4.1,0,6.4-5.2,6.4-15.5
+                C168.8,164.1,166.7,158.8,162.4,158.8z"/>
+              <path fill="#000" d="M188.6,94.8c-3.9,0-6.6,5-6.5,15.5c-0.1,10.4,2.5,15.4,6.6,15.4c4.1,0,6.4-5.2,6.4-15.5
+                C195.1,100.1,192.9,94.8,188.6,94.8z"/>
+              <path fill="#000" d="M96.1,158.8c-3.9,0-6.6,5-6.5,15.5c-0.1,10.4,2.5,15.4,6.6,15.4c4.1,0,6.4-5.2,6.4-15.5
+                C102.6,164.1,100.4,158.8,96.1,158.8z"/>
+            </g>
+            </svg> See JSON</button>
+              <div class="sort right">Relevance <svg version="1.1"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+               x="0px" y="0px" width="1em" height=".7em" viewBox="0 0 134.7 98.3" enable-background="new 0 0 134.7 98.3"
+               xml:space="preserve">
+            <defs>
+            </defs>
+            <polygon fill="#0C63AB" points="0,0 67.4,98.3 134.7,0 "/>
+            </svg>
+            </div>
+            </div>
+            </div>
+                <div class="cardsCollector">
+                  <!-- return no result -->
+                  <div class="noResult tickers small-12">- Not Detected -</div>
+                  <!-- show preloader -->
+                  <div ng-show="showLoading()" class="animated preloader bounceIn">
+                      <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+                        <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#0D78B9">
+                            <g fill="none" fill-rule="evenodd">
+                                <g transform="translate(1 1)" stroke-width="2">
+                                    <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+                                    <path d="M36 18c0-9.94-8.06-18-18-18">
+                                        <animateTransform
+                                            attributeName="transform"
+                                            type="rotate"
+                                            from="0 18 18"
+                                            to="360 18 18"
+                                            dur="1s"
+                                            repeatCount="indefinite"/>
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                  </div>
+                  <!-- ng-repeat="demoData in demoDatas" -->
+                  <div class="cards clearfix animated fadeInDown" ng-repeat="demoData in demoDatas | orderBy:'-relevance'">
+                    <ul class="tickers clearfix">
+                        <li   ng-click="showName = true" class="animated fadeIn primaryName small-6 large-6 left columns">{{demoData.clientReferenceData.primaryName | cut:false:18:' ...' }}</li> <div  ng-show="showName" class="small-12 columns wholeName">{{demoData.clientReferenceData.primaryName}} <span ng-click="showName = false" class="text-center small-1 left">X</span> </div>
+                        <li class="tickerName small-4 large-4 columns">{{demoData.clientReferenceData.primaryTicker}}</li>
+                        <li class="small-2 large-2 right columns relevance">{{demoData.relevance | percentage:2}}</li>
+                    </ul>
+                  </div>
+                </div>
+            </div><!--  billBoard -->
+            <div class="clearfix"></div>
+            <div id="jsonContent">
+              <div class="jsonHead">JSON Data Output</div>
+              <pre>{{rawDatas | json}}</pre>
+            </div>
+        </div><!-- mainWrapper form controller-->
+        
+
+        <footer  class="footer"><span class="copyright">Copyright &copy; 2015 Selerity, Inc </span></footer>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
