@@ -323,7 +323,7 @@ input[type="submit"]{
     display: inline-block;
 
 }
-.tickers{
+.tickers, .relevance{
     font-size: .9rem;
 }
 .primaryName{
