@@ -286,9 +286,9 @@ input[type="submit"]{
     font-size: 1em;
     padding: .5em;
 }
-.tickers .columns{
+/*.tickers .columns{
     padding: 0;
-}
+}*/
 .btn.sub:after{
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -356,7 +356,7 @@ input[type="submit"]{
     border-radius: 3px;
     z-index: 99;
     position: absolute;
-    padding: 0 .5em;
+    /*padding: 0 .5em;*/
     left: 0;
     top: 0;
     background-color: #0d78b9;
