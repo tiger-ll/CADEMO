@@ -364,6 +364,15 @@ input[type="submit"]{
     font-weight: lighter;
 
 }
+
+.wholeTicker{
+    border-radius: 3px;
+    z-index: 99;
+    background-color: #0d78b9;
+    color: white;
+    font-weight: lighter;
+}
+
 .wholeName span{
     cursor: pointer;
 }
