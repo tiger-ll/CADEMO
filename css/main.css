@@ -82,7 +82,7 @@ body::-webkit-scrollbar-track {
     display: block;
     content: " ";
     width: 100%;
-
+    min-width: 1024px;
     position: fixed;
     z-index: 99;
     background: #3d3d3d;
@@ -266,7 +266,6 @@ input[type="submit"]{
     overflow:hidden;
     border-radius: 15px; 
     border:solid 1px #e3e4e5;
-    margin-bottom: 5rem;
 }
 .cardsCollector{
     height: 260px;
@@ -321,7 +320,6 @@ input[type="submit"]{
 }
 .tickers li{
     display: inline-block;
-
 }
 .tickers, .relevance{
     font-size: .9rem;
@@ -343,7 +341,6 @@ input[type="submit"]{
     text-align: right;
     float: right;
     font-weight: bold;
-
 }
 .sort{
     padding-top:.4em;
@@ -357,7 +354,6 @@ input[type="submit"]{
     border-radius: 3px;
     z-index: 99;
     position: absolute;
-    /*padding: 0 .5em;*/
     left: 0;
     top: 0;
     background-color: #0d78b9;
@@ -377,7 +373,6 @@ input[type="submit"]{
     overflow: auto;
     cursor: default;
 }
-
 .wholeName span{
     cursor: pointer;
 }
@@ -427,6 +422,7 @@ padding-left:0;
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
 }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -705,7 +701,7 @@ body::-webkit-scrollbar-corner {
        (min-resolution: 120dpi) {
 
 }
-@media (max-width: 640px){
+@media (max-width: 400px){
     .brand img{
         width: 7em;
     }
