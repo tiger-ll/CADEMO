@@ -110,14 +110,14 @@
                   <!-- ng-repeat="demoData in demoDatas" -->
                   <div class="cards clearfix animated fadeInDown" ng-repeat="demoData in demoDatas | orderBy:'-relevance'">
                     <ul class="tickers clearfix">
-                        <li ng-mouseenter="showName = true" class="animated fadeIn primaryName small-6 large-6 left columns">{{demoData.clientReferenceData.primaryName}}</li> 
+                        <li ng-mouseenter="showName = true" class="animated fadeIn primaryName small-5 large-5 left columns">{{demoData.clientReferenceData.primaryName}}</li> 
                             <div ng-show="showName" ng-mouseleave="showName = false" class="small-10 columns wholeName">{{demoData.clientReferenceData.primaryName}}</div>
-                        <li class="tickerName small-4 large-4 columns" ng-mouseenter="showTicker = true">{{demoData.clientReferenceData.primaryTicker}}</li>
-                            <div ng-show="showTicker" ng-mouseleave="showTicker = false" class="small-offset-6 small-6 columns wholeTicker">{{demoData.clientReferenceData.primaryTicker}}</div>
+                        <li class="tickerName small-5 large-5 columns" ng-mouseenter="showTicker = true">{{demoData.clientReferenceData.primaryTicker}}</li>
+                            <div ng-show="showTicker" ng-mouseleave="showTicker = false" class="small-offset-5 small-7 columns wholeTicker">{{demoData.clientReferenceData.primaryTicker}}</div>
                         <li class="small-2 large-2 right columns relevance">{{demoData.relevance | percentage:2}}</li>
                     </ul>
                   </div>
-                </div>
+                </div><!-- cardsCollector -->
             </div><!--  billBoard -->
             <div class="clearfix"></div>
             <div id="jsonContent">
