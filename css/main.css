@@ -333,6 +333,7 @@ input[type="submit"]{
 .tickerName{
     font-weight: lighter;
     white-space:nowrap;
+    cursor: default;
     overflow: hidden;
     text-overflow:ellipsis;
 }
