@@ -326,6 +326,8 @@ input[type="submit"]{
 }
 .primaryName{
     cursor: pointer;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 .tickerName{
     font-weight: lighter;
