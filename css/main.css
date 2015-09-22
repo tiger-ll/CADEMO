@@ -363,6 +363,7 @@ input[type="submit"]{
     background-color: #0d78b9;
     color: white;
     font-weight: lighter;
+    cursor: default;
 
 }
 
@@ -374,6 +375,7 @@ input[type="submit"]{
     color: white;
     font-weight: lighter;
     overflow: auto;
+    cursor: default;
 }
 
 .wholeName span{
