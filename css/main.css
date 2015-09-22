@@ -286,9 +286,9 @@ input[type="submit"]{
     font-size: 1em;
     padding: .5em;
 }
-/*.tickers .columns{
+.tickers .columns{
     padding: 0;
-}*/
+}
 .btn.sub:after{
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
