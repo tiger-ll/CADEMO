@@ -353,6 +353,7 @@ input[type="submit"]{
     border-bottom: solid 1px #e3e4e5;
 }
 .wholeName{
+    border-radius: 3px;
     z-index: 99;
     position: absolute;
     left: 0;
