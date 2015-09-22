@@ -325,12 +325,16 @@ input[type="submit"]{
 
 }
 .primaryName{
+    white-space:nowrap;
     cursor: pointer;
     overflow: hidden;
     text-overflow:ellipsis;
 }
 .tickerName{
     font-weight: lighter;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 .relevance{
     text-align: right;
