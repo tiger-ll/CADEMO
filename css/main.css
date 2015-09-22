@@ -321,8 +321,10 @@ input[type="submit"]{
 }
 .tickers li{
     display: inline-block;
-    font-size: 1em;
 
+}
+.tickers{
+    font-size: .9rem;
 }
 .primaryName{
     white-space:nowrap;
