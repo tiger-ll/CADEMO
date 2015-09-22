@@ -422,6 +422,11 @@ padding-left:0;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+
+.animated.instant {
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+}
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
